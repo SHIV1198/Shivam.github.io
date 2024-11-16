@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <nav>
+        <div class="container nav-container">
+            <a href="#" class="logo">Portfolio</a>
+            <div class="hamburger">☰</div>
+            <div class="nav-links">
+                <a href="#intro">Intro</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="intro" class="intro">
+            <div class="intro-text">
+                <h2 class="section-title">About Me</h2>
+                <p>Hi ! I am Shivam. </br>A passionate developer with a keen interest in creating beautiful and functional web experiences</p>
+            </div>
+            <div class="intro-image">
+                <img src="user.png" alt="Profile Picture">
+            </div>
+            <div class="intro-text">
+                <h2 class="section-title"> &lt/Coder&gt</h2>
+                <p>Specialized in front-end development with expertise in creating responsive and accessible web applications.</p>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-education">
+            <div class="skills">
+                <div class="icon-container">
+                    <img src="skills.avif" alt="Skills Icon">
+                </div>
+                <div class="content">
+                    <h2 class="section-title">Skills</h2>
+                    <ul>
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Java</li>
+                        <li>Spring Boot</li>
+                        <li>SQL/PostgreSQL</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="education">
+                <div class="icon-container">
+                    <img src="edu.avif" alt="Education Icon">
+                </div>
+                <div class="content">
+                    <h2 class="section-title">Education</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h3>B.E. in Information Science</h3>
+                            <p>Visveshwaraya Technological University (2018-2022)</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h3>Class 10th & 12th</h3>
+                            <p>Kendriya Vidyalaya (2016-2018)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience-projects">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-item">
+                <div class="exp-header">
+                    <h3>Developer</h3>
+                    <span>2022-Present</span>
+                </div>
+                <p>Just an example - Led development team in creating innovative web solutions, improving performance and user experience.</p>
+            </div>
+            <div class="experience-item">
+                <div class="exp-header">
+                    <h3>Intern at Exposys Data Labs</h3>
+                    <span>2022</span>
+                </div>
+                <p>Created video chat app with WebRTC using HTML, CSS and Javascipt</p>
+            </div>
+
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="portfolio.jpg" alt="Project 1">
+                    <div class="project-info">
+                        <h3>E-commerce Platform</h3>
+                        <p>A fully responsive e-commerce solution with modern UI/UX design principles.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="project.png" alt="Project 2">
+                    <div class="project-info">
+                        <h3>Portfolio Generator</h3>
+                        <p>A tool that helps developers create professional portfolios with ease.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container footer-content">
+            <div class="contact-info">
+                <h2 class="section-title">Contact Me</h2>
+                <p>Feel free to reach out for collaborations or just a friendly hello.</p>
+                <p>Email: shiv.shivamanan@gmail.com</p>
+                <p>Location: Bangalore, India</p>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="4" placeholder="Message" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Minimal JavaScript for hamburger menu
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
